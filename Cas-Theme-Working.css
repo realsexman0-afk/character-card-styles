@@ -1,0 +1,163 @@
+/* -------------------------------
+   CHUB.AI — BLACK / NEON BLUE THEME
+   Author: (Your Name)
+   ------------------------------- */
+
+/* GLOBAL BACKGROUND */
+body {
+    background: #000 !important;
+    color: #e8e8e8 !important;
+    font-family: Inter, sans-serif;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+    color: #5ccbff !important;
+    text-shadow: 0 0 10px rgba(58,186,254,0.35);
+}
+
+/* LINKS */
+a {
+    color: #4dbaff !important;
+}
+a:hover {
+    color: #7fd5ff !important;
+    text-shadow: 0 0 8px rgba(58,186,254,0.35);
+}
+
+/* -------------------------------
+   CARD / PANEL ELEMENTS
+   ------------------------------- */
+.card,
+.ant-card,
+.css-dev-only-do-not-override,
+.ant-collapse,
+[role="tabpanel"],
+div[class*="container"],
+div[class*="content"] {
+    background: #000 !important;
+    border: 2px solid #3abafe !important;
+    border-radius: 14px !important;
+    box-shadow: 0 0 25px rgba(58,186,254,0.25) !important;
+}
+
+/* -------------------------------
+   BUTTON STYLING
+   ------------------------------- */
+
+/* PRIMARY BUTTON — CHAT */
+.ant-btn-primary,
+button.ant-btn-primary,
+button[class*="primary"] {
+    background: linear-gradient(135deg, #3abafe, #6cd4ff) !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    padding: 14px 18px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 18px rgba(58,186,254,0.45) !important;
+    transition: 0.2s ease-in-out !important;
+}
+.ant-btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(58,186,254,0.65) !important;
+}
+
+/* SECONDARY BUTTONS — Import, Download, Nominate */
+.ant-btn-default,
+button.ant-btn-default,
+button[class*="secondary"],
+button[class*="outlined"] {
+    background: #000 !important;
+    border: 2px solid #3abafe !important;
+    color: #3abafe !important;
+    font-weight: 600 !important;
+    padding: 12px 16px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 12px rgba(58,186,254,0.25) !important;
+    transition: 0.2s ease-in-out !important;
+}
+.ant-btn-default:hover {
+    transform: scale(1.03);
+    border-color: #6cd4ff !important;
+    color: #6cd4ff !important;
+    box-shadow: 0 0 18px rgba(58,186,254,0.4) !important;
+}
+
+/* NOMINATE SPECIAL */
+button.galaxy-bg,
+button:has(strong) {
+    background: #000 !important;
+    border: 2px solid #5ccbff !important;
+    color: #5ccbff !important;
+    font-weight: 700 !important;
+}
+
+/* -------------------------------
+   INPUT FIELDS / TAGS / SELECTORS
+   ------------------------------- */
+input,
+textarea,
+select,
+.ant-input,
+.ant-select-selector {
+    background: #000 !important;
+    border: 2px solid #3abafe !important;
+    color: #e8e8e8 !important;
+    border-radius: 10px !important;
+}
+
+/* INPUT FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #6cd4ff !important;
+    box-shadow: 0 0 12px rgba(58,186,254,0.35) !important;
+}
+
+/* -------------------------------
+   SCROLLBAR
+   ------------------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #3abafe;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(58,186,254,0.35);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6cd4ff;
+}
+
+/* -------------------------------
+   AVATAR / IMAGES
+   ------------------------------- */
+img {
+    border-radius: 10px !important;
+    border: 2px solid #3abafe !important;
+    box-shadow: 0 0 12px rgba(58,186,254,0.25) !important;
+}
+
+/* -------------------------------
+   MISC TEXT ELEMENTS / LABELS
+   ------------------------------- */
+strong, b {
+    color: #5ccbff !important;
+}
+
+label, .ant-form-item-label {
+    color: #7fd5ff !important;
+}
+
+/* -------------------------------
+   FOOTER
+   ------------------------------- */
+footer {
+    background: #000 !important;
+    border-top: 2px solid #3abafe !important;
+    box-shadow: 0 -5px 18px rgba(58,186,254,0.25);
+}
