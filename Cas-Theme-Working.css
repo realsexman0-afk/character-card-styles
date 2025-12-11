@@ -1,89 +1,153 @@
-/* WRAPPER ROOT */
-.chub-theme {
-    background: #000 !important;
-    color: #e8e8e8 !important;
+/* ===========================================================
+   CASSIE CUSTOM THEME
+   Wrapper class: cassie-sec
+   Style: Black + Neon Blue Glow
+   Background: Custom image (sfw glaceon reading)
+   =========================================================== */
+
+/* ROOT WRAPPER */
+.cassie-sec {
+    position: relative;
+    padding: 40px 0;
+    background: #000;
+    background-image: url('https://raw.githubusercontent.com/realsexman0-afk/Cassie-Theme/main/cassie_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #5ecbff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(94,203,255,0.35);
+    overflow: hidden;
 }
 
-/* EVERYTHING INSIDE THE WRAPPER */
-.chub-theme * {
-    color: inherit;
-    box-sizing: border-box;
+/* DARK OVERLAY FOR READABILITY */
+.cassie-sec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(2px);
 }
 
-/* HEADINGS */
-.chub-theme h1,
-.chub-theme h2,
-.chub-theme h3,
-.chub-theme h4 {
-    color: #5ccbff !important;
-    text-shadow: 0 0 10px rgba(58,186,254,0.35);
+/* INNER WRAP */
+.cassie-wrap {
+    position: relative;
+    z-index: 5;
+    padding: 20px 35px;
 }
 
-/* LINKS */
-.chub-theme a {
-    color: #4dbaff !important;
-}
-.chub-theme a:hover {
-    color: #7fd5ff !important;
-    text-shadow: 0 0 8px rgba(58,186,254,0.35);
-}
-
-/* CARDS & PANELS */
-.chub-theme .ant-card,
-.chub-theme .card,
-.chub-theme [class*="container"] {
-    background: #000 !important;
-    border: 2px solid #3abafe !important;
-    border-radius: 14px !important;
-    box-shadow: 0 0 25px rgba(58,186,254,0.25) !important;
+/* TITLE */
+.cassie-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #85d9ff;
+    text-shadow: 0 0 15px rgba(94,203,255,0.65);
 }
 
-/* BUTTONS */
-.chub-theme .ant-btn-primary {
-    background: linear-gradient(135deg, #3abafe, #6cd4ff) !important;
-    color: #fff !important;
-    font-weight: 700 !important;
-    border: none !important;
-    border-radius: 12px !important;
-    padding: 14px 18px !important;
-    box-shadow: 0 0 18px rgba(58,186,254,0.45) !important;
-}
-.chub-theme .ant-btn-primary:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(58,186,254,0.65) !important;
+/* SUBTITLE */
+.cassie-subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #7ccfff;
+    opacity: 0.85;
 }
 
-/* OUTLINED / SECONDARY BUTTONS */
-.chub-theme .ant-btn-default {
-    background: #000 !important;
-    border: 2px solid #3abafe !important;
-    color: #3abafe !important;
-    border-radius: 10px !important;
-}
-.chub-theme .ant-btn-default:hover {
-    border-color: #6cd4ff !important;
-    color: #6cd4ff !important;
+/* DESCRIPTION BLOCK */
+.cassie-desc {
+    background: rgba(0,0,0,0.55);
+    padding: 20px;
+    border: 2px solid #5ecbff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(94,203,255,0.35);
+    color: #ceecff;
 }
 
-/* NOMINATE BUTTON */
-.chub-theme button.galaxy-bg {
-    background: #000 !important;
-    border: 2px solid #5ccbff !important;
-    color: #5ccbff !important;
-    font-weight: 700 !important;
+.cassie-desc-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #a5e1ff;
+    text-shadow: 0 0 10px rgba(94,203,255,0.45);
 }
 
-/* INPUTS */
-.chub-theme input,
-.chub-theme textarea {
-    background: #000 !important;
-    border: 2px solid #3abafe !important;
-    color: #e8e8e8 !important;
+/* PARAGRAPH TEXT */
+.cassie-description {
+    line-height: 1.55;
+    font-size: 1.1rem;
 }
 
-/* IMAGES */
-.chub-theme img {
-    border-radius: 10px !important;
-    border: 2px solid #3abafe !important;
-    box-shadow: 0 0 12px rgba(58,186,254,0.25) !important;
+/* CUSTOM BUTTONS */
+.cassie-btn-bar {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
+
+.cassie-btn {
+    padding: 12px 20px;
+    background: #000;
+    border: 2px solid #5ecbff;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #9bddff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 0 15px rgba(94,203,255,0.35);
+}
+
+.cassie-btn:hover {
+    transform: scale(1.05);
+    border-color: #a8e7ff;
+    color: #d5f6ff;
+    box-shadow: 0 0 25px rgba(94,203,255,0.55);
+}
+
+/* SCENARIOS */
+.cassie-scen-title {
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #a5e1ff;
+    text-shadow: 0 0 10px rgba(94,203,255,0.45);
+    font-size: 1.6rem;
+}
+
+.cassie-scen-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cassie-scen-item {
+    background: rgba(0,0,0,0.50);
+    border: 2px solid #5ecbff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(94,203,255,0.25);
+}
+
+.cassie-scen-heading {
+    font-size: 1.3rem;
+    color: #9ddfff;
+    margin-bottom: 8px;
+}
+
+.cassie-scen-text {
+    color: #d5f4ff;
+}
+
+/* AUTHOR NOTE BOX */
+.cassie-note {
+    margin-top: 25px;
+    background: rgba(0,0,0,0.55);
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #5ecbff;
+    color: #c8eaff;
+    box-shadow: 0 0 12px rgba(94,203,255,0.25);
+}
+
