@@ -1,163 +1,175 @@
-/* -------------------------------
-   CHUB.AI — BLACK / NEON BLUE THEME
-   Author: (Your Name)
-   ------------------------------- */
+/* ===========================================================
+   CASSIE GLACE — FROST / ICE NEON THEME
+   Wrapper: cassie-sec
+   Color Scheme: Black + Ice Blue Glow
+   Background: Frosted gradient (no image needed)
+   =========================================================== */
 
-/* GLOBAL BACKGROUND */
-body {
-    background: #000 !important;
-    color: #e8e8e8 !important;
-    font-family: Inter, sans-serif;
-}
 
-/* HEADINGS */
-h1, h2, h3, h4 {
-    color: #5ccbff !important;
-    text-shadow: 0 0 10px rgba(58,186,254,0.35);
-}
-
-/* LINKS */
-a {
-    color: #4dbaff !important;
-}
-a:hover {
-    color: #7fd5ff !important;
-    text-shadow: 0 0 8px rgba(58,186,254,0.35);
+/* MAIN SECTION BACKGROUND */
+.cassie-sec {
+    position: relative;
+    padding: 45px 0;
+    background: radial-gradient(circle at top, #0a1c2d 0%, #02070c 70%);
+    border: 2px solid #7fd9ff;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(130,225,255,0.35);
+    overflow: hidden;
 }
 
-/* -------------------------------
-   CARD / PANEL ELEMENTS
-   ------------------------------- */
-.card,
-.ant-card,
-.css-dev-only-do-not-override,
-.ant-collapse,
-[role="tabpanel"],
-div[class*="container"],
-div[class*="content"] {
-    background: #000 !important;
-    border: 2px solid #3abafe !important;
-    border-radius: 14px !important;
-    box-shadow: 0 0 25px rgba(58,186,254,0.25) !important;
+/* ICE FROST VEIL OVERLAY */
+.cassie-sec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(135,220,255,0.08) 0%,
+        rgba(180,240,255,0.05) 40%,
+        rgba(120,200,255,0.08) 100%
+    );
+    backdrop-filter: blur(3px);
 }
 
-/* -------------------------------
-   BUTTON STYLING
-   ------------------------------- */
-
-/* PRIMARY BUTTON — CHAT */
-.ant-btn-primary,
-button.ant-btn-primary,
-button[class*="primary"] {
-    background: linear-gradient(135deg, #3abafe, #6cd4ff) !important;
-    border: none !important;
-    color: #fff !important;
-    font-weight: 700 !important;
-    padding: 14px 18px !important;
-    border-radius: 12px !important;
-    box-shadow: 0 0 18px rgba(58,186,254,0.45) !important;
-    transition: 0.2s ease-in-out !important;
-}
-.ant-btn-primary:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(58,186,254,0.65) !important;
+/* INTERNAL WRAPPER */
+.cassie-wrap {
+    position: relative;
+    z-index: 10;
+    padding: 25px 40px;
 }
 
-/* SECONDARY BUTTONS — Import, Download, Nominate */
-.ant-btn-default,
-button.ant-btn-default,
-button[class*="secondary"],
-button[class*="outlined"] {
-    background: #000 !important;
-    border: 2px solid #3abafe !important;
-    color: #3abafe !important;
-    font-weight: 600 !important;
-    padding: 12px 16px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 0 12px rgba(58,186,254,0.25) !important;
-    transition: 0.2s ease-in-out !important;
-}
-.ant-btn-default:hover {
-    transform: scale(1.03);
-    border-color: #6cd4ff !important;
-    color: #6cd4ff !important;
-    box-shadow: 0 0 18px rgba(58,186,254,0.4) !important;
+
+/* ===========================================================
+   HEADER STYLING
+   =========================================================== */
+
+/* TITLE */
+.cassie-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 4px;
+    color: #a7eaff;
+    text-shadow: 0 0 20px rgba(155,235,255,0.75);
 }
 
-/* NOMINATE SPECIAL */
-button.galaxy-bg,
-button:has(strong) {
-    background: #000 !important;
-    border: 2px solid #5ccbff !important;
-    color: #5ccbff !important;
-    font-weight: 700 !important;
+/* SUBTITLE */
+.cassie-subtitle {
+    text-align: center;
+    font-size: 1.45rem;
+    color: #9ad7ff;
+    margin-bottom: 28px;
+    opacity: 0.9;
 }
 
-/* -------------------------------
-   INPUT FIELDS / TAGS / SELECTORS
-   ------------------------------- */
-input,
-textarea,
-select,
-.ant-input,
-.ant-select-selector {
-    background: #000 !important;
-    border: 2px solid #3abafe !important;
-    color: #e8e8e8 !important;
-    border-radius: 10px !important;
+
+/* ===========================================================
+   DESCRIPTION BOX
+   =========================================================== */
+
+.cassie-desc {
+    background: rgba(0, 15, 30, 0.55);
+    border: 2px solid #89ddff;
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 0 25px rgba(120,210,255,0.25);
 }
 
-/* INPUT FOCUS */
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #6cd4ff !important;
-    box-shadow: 0 0 12px rgba(58,186,254,0.35) !important;
+.cassie-desc-title {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+    color: #b3efff;
+    text-shadow: 0 0 12px rgba(150,230,255,0.5);
 }
 
-/* -------------------------------
-   SCROLLBAR
-   ------------------------------- */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #000;
-}
-::-webkit-scrollbar-thumb {
-    background: #3abafe;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(58,186,254,0.35);
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #6cd4ff;
+.cassie-description {
+    color: #d9f6ff;
+    font-size: 1.15rem;
+    line-height: 1.55;
 }
 
-/* -------------------------------
-   AVATAR / IMAGES
-   ------------------------------- */
-img {
-    border-radius: 10px !important;
-    border: 2px solid #3abafe !important;
-    box-shadow: 0 0 12px rgba(58,186,254,0.25) !important;
+
+/* ===========================================================
+   BUTTON BAR
+   =========================================================== */
+
+.cassie-btn-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: 25px 0;
 }
 
-/* -------------------------------
-   MISC TEXT ELEMENTS / LABELS
-   ------------------------------- */
-strong, b {
-    color: #5ccbff !important;
+.cassie-btn {
+    background: rgba(0,0,0,0.55);
+    padding: 12px 24px;
+    border: 2px solid #88d8ff;
+    border-radius: 14px;
+    color: #c5f3ff;
+    font-size: 1.15rem;
+    box-shadow: 0 0 20px rgba(120,210,255,0.25);
+    cursor: pointer;
+    transition: 0.25s ease;
 }
 
-label, .ant-form-item-label {
-    color: #7fd5ff !important;
+.cassie-btn:hover {
+    transform: scale(1.07);
+    color: white;
+    border-color: #d7f7ff;
+    box-shadow: 0 0 28px rgba(155,235,255,0.55);
 }
 
-/* -------------------------------
-   FOOTER
-   ------------------------------- */
-footer {
-    background: #000 !important;
-    border-top: 2px solid #3abafe !important;
-    box-shadow: 0 -5px 18px rgba(58,186,254,0.25);
+
+/* ===========================================================
+   SCENARIOS
+   =========================================================== */
+
+.cassie-scen-title {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #b3efff;
+    text-shadow: 0 0 12px rgba(150,230,255,0.45);
+    margin: 28px 0 18px;
+}
+
+.cassie-scen-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cassie-scen-item {
+    background: rgba(0, 20, 40, 0.50);
+    border: 2px solid #88d8ff;
+    padding: 18px;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(120,210,255,0.25);
+}
+
+.cassie-scen-heading {
+    font-size: 1.35rem;
+    color: #b7f0ff;
+    margin-bottom: 6px;
+}
+
+.cassie-scen-text {
+    color: #d8f7ff;
+}
+
+
+/* ===========================================================
+   AUTHOR NOTE
+   =========================================================== */
+
+.cassie-note {
+    margin-top: 25px;
+    background: rgba(0, 15, 30, 0.55);
+    padding: 18px;
+    border-radius: 14px;
+    border: 2px solid #89ddff;
+    color: #d8f5ff;
+    box-shadow: 0 0 20px rgba(120,210,255,0.25);
 }
